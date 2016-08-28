@@ -28,5 +28,5 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :trot, :port, 4000
+config :trot, :port, System.get_env("PORT")
 config :trot, :router, Pigbot.Router
